@@ -9,9 +9,12 @@ export function NoteBox(props){
 					<h2 className="text-2xl text-cyan-300">{props.title}</h2>
 					<p className="text-white">{props.body}</p>
           <div className="buttonBox flex justify-around w-full h-7 absolute bottom-0">
-            <button className="border-solid border-2 border-sky-500 w-full cursor-pointer text-xs">Wykonane</button>
-            <button className="border-solid border-2 border-sky-500 w-full cursor-pointer text-xs">Edytuj</button>
-            <button className="border-solid border-2 border-sky-500 w-full cursor-pointer text-xs">Usuń</button>
+            <button className="border-solid border-2 border-sky-500 w-full cursor-pointer text-xs" onClick={()=> console.log('wykonane')
+            }>Wykonane</button>
+            <button className="border-solid border-2 border-sky-500 w-full cursor-pointer text-xs" onClick={()=> console.log('Edtytuj')
+            }>Edytuj</button>
+            <button className="border-solid border-2 border-sky-500 w-full cursor-pointer text-xs" onClick={()=> console.log('Usuń')
+            }>Usuń</button>
           </div>
 
 				</div>
