@@ -4,7 +4,9 @@ export function Login(){
     return(
         <div className="Layout w-full h-screen flex justify-center items-center bg-slate-500">
         
-        <div className=" flex justify-start items-center flex-col border w-96 h-96 p-5">
+        <div className=" flex justify-start items-center flex-col border w-96 h-96 p-5 ">
+            
+
             <h1 className="text-4xl mb-16">login</h1>
 
         <form className="inputBox border flex justify-center items-start flex-col p-5">

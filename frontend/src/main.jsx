@@ -1,13 +1,15 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './styles/index.css'
-// import App from './pages/App'
-import { Login } from './pages/login'
+// import { AddModal } from './components/AddModal'
+import App from './pages/App'
+// import { Login } from './pages/login'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <App></App> */}
-    <Login />
+    <App/>
+    {/* <Login /> */}
+    {/* <AddModal /> */}
   </StrictMode>,
 )
