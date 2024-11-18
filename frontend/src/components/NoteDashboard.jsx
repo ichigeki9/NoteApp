@@ -2,8 +2,10 @@
 import { NoteBox } from "./noteBox";
 
 export function NoteDashboard(props) {
+
+	
 	const list = props.data.map((obj) => {
-		return <NoteBox key={obj.id} title={obj.title} body={obj.text} />;
+		return <NoteBox handleDelete={props.handleDelete} id={obj.id} key={obj.id} title={obj.title} body={obj.text} />;
 	});
 
 	return (
@@ -15,7 +17,7 @@ export function NoteDashboard(props) {
 				+
 			</button>
 			<div className="noteContainer flex justify-start items-start flex-wrap  w-full  p-5 gap-9">
-				{list}
+				{props.data.length > 0 ? list : <p>nara</p>}
 			</div>
 		</div>
 	);

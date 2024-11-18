@@ -3,14 +3,15 @@ import { useState } from "react";
 /* eslint-disable react/prop-types */
 export function AddModal(props){
 
-    const [newNote, setNewNote] = useState({id:'',title:'', text:''})
+    const [newNote, setNewNote] = useState({title:'', text:''})
     
     console.log(newNote);
     
     function addNote(e){
         e.preventDefault()
         console.log('dodawanie ');
-        props.setData((prev) => [...prev, {...newNote,id:props.data.length+1}] )
+        // props.setData((prev) => [...prev, {...newNote,id:props.data.length+1}] )
+        props.handleAdd(newNote)
         console.log(newNote);
         
     }

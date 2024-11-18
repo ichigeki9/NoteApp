@@ -3,6 +3,10 @@
 
 export function NoteBox(props){
 
+
+
+
+
     return(
         <div className="noteBox flex justify-start items-center flex-col border-2 border-red-600 w-48 h-48 p-2 relative">
 
@@ -13,7 +17,8 @@ export function NoteBox(props){
             }>Wykonane</button>
             <button className="border-solid border-2 border-sky-500 w-full cursor-pointer text-xs" onClick={()=> console.log('Edtytuj')
             }>Edytuj</button>
-            <button className="border-solid border-2 border-sky-500 w-full cursor-pointer text-xs" onClick={()=> console.log('Usuń')
+            {/* <button className="border-solid border-2 border-sky-500 w-full cursor-pointer text-xs" onClick={() => props.handleDeleteNote(id)} */}
+            <button className="border-solid border-2 border-sky-500 w-full cursor-pointer text-xs" onClick={() => props.handleDelete(props.id)
             }>Usuń</button>
           </div>
 
